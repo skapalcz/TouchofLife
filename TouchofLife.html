@@ -1,0 +1,3240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title>Touch of Life | Holistic Wellness</title>
+
+    <meta
+        name="description"
+        content="Touch of Life offers holistic wellness services including reflexology, EFT, Reiki, kinesiology, aromatherapy and workshops."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+<style>
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #faf9f5;
+    color: #26352e;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --forest: #315447;
+    --forest-dark: #203b32;
+
+    --sage: #a9b9a5;
+    --sage-light: #e7ede4;
+
+    --cream: #faf9f5;
+    --cream-dark: #eee9df;
+
+    --sand: #d9c8aa;
+    --gold: #b69a68;
+
+    --white: #ffffff;
+
+    --text-light: #66736c;
+
+    --shadow:
+        0 20px 50px rgba(38, 53, 46, 0.10);
+
+    --radius: 18px;
+
+    --max-width: 1180px;
+}
+
+
+/* =========================================================
+   CONTAINERS
+========================================================= */
+
+.container {
+
+    width:
+        min(
+            calc(100% - 40px),
+            var(--max-width)
+        );
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+h1,
+h2,
+h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-weight: 600;
+}
+
+h1 {
+
+    font-size:
+        clamp(
+            2.8rem,
+            6vw,
+            5rem
+        );
+
+    line-height: 1.05;
+}
+
+h2 {
+
+    font-size:
+        clamp(
+            2.2rem,
+            4vw,
+            3.4rem
+        );
+
+    line-height: 1.15;
+}
+
+p {
+    max-width: 70ch;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background:
+        rgba(
+            250,
+            249,
+            245,
+            0.94
+        );
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid
+        rgba(38, 53, 46, 0.08);
+}
+
+.nav-container {
+
+    width:
+        min(
+            calc(100% - 40px),
+            var(--max-width)
+        );
+
+    height: 78px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.logo-mark {
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: var(--forest);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.logo-text {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: var(--forest-dark);
+
+    white-space: nowrap;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-links a {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #405047;
+
+    transition: .3s ease;
+}
+
+.nav-links a:hover {
+
+    color: var(--gold);
+}
+
+
+/* NAV BUTTON */
+
+.nav-button {
+
+    background: var(--forest);
+
+    color: white !important;
+
+    padding:
+        10px
+        20px;
+
+    border-radius: 100px;
+}
+
+.nav-button:hover {
+
+    background: var(--forest-dark);
+
+    color: white !important;
+}
+
+
+/* MOBILE MENU */
+
+.menu-button {
+
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--forest);
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    padding-top: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(169,185,165,.45),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #faf9f5,
+            #f0f3ed
+        );
+}
+
+.hero-container {
+
+    width:
+        min(
+            calc(100% - 40px),
+            var(--max-width)
+        );
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, .95fr);
+
+    gap:
+        clamp(
+            40px,
+            7vw,
+            90px
+        );
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--gold);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.eyebrow::before {
+
+    content: "";
+
+    width: 30px;
+
+    height: 1px;
+
+    background: var(--gold);
+}
+
+.hero h1 {
+
+    color: var(--forest-dark);
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+
+    color: var(--gold);
+
+    font-style: italic;
+}
+
+.hero-description {
+
+    color: var(--text-light);
+
+    font-size:
+        clamp(
+            1rem,
+            2vw,
+            1.15rem
+        );
+
+    margin-bottom: 35px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        13px
+        24px;
+
+    border-radius: 100px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: .3s ease;
+
+    cursor: pointer;
+}
+
+.button-primary {
+
+    background: var(--forest);
+
+    color: white;
+}
+
+.button-primary:hover {
+
+    background: var(--forest-dark);
+
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+
+    border:
+        1px solid
+        var(--forest);
+
+    color: var(--forest);
+}
+
+.button-secondary:hover {
+
+    background: var(--forest);
+
+    color: white;
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+
+    position: relative;
+
+    width: 100%;
+}
+
+.hero-card {
+
+    width: 100%;
+
+    min-height:
+        clamp(
+            380px,
+            55vw,
+            540px
+        );
+
+    border-radius:
+        180px
+        180px
+        25px
+        25px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,.12),
+            transparent 45%
+        ),
+
+        linear-gradient(
+            145deg,
+            var(--forest),
+            var(--forest-dark)
+        );
+
+    box-shadow: var(--shadow);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 60%;
+
+    aspect-ratio: 1;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    border-radius: 50%;
+}
+
+.hero-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 85%;
+
+    aspect-ratio: 1;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    border-radius: 50%;
+}
+
+.lotus {
+
+    color: white;
+
+    font-size:
+        clamp(
+            80px,
+            12vw,
+            140px
+        );
+
+    z-index: 2;
+}
+
+.floating-card {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: -35px;
+
+    max-width: 240px;
+
+    background: white;
+
+    padding:
+        20px
+        24px;
+
+    border-radius: 16px;
+
+    box-shadow: var(--shadow);
+}
+
+.floating-card strong {
+
+    display: block;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 20px;
+
+    color: var(--forest-dark);
+}
+
+.floating-card span {
+
+    font-size: 13px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+section {
+
+    padding:
+        clamp(70px, 10vw, 115px)
+        0;
+}
+
+.section-heading {
+
+    max-width: 650px;
+
+    margin-bottom: 55px;
+}
+
+.section-heading.center {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+
+    color: var(--forest-dark);
+
+    margin-bottom: 18px;
+}
+
+.section-heading p {
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+
+    background: white;
+}
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap:
+        clamp(
+            40px,
+            8vw,
+            90px
+        );
+
+    align-items: center;
+}
+
+.about-image {
+
+    min-height:
+        clamp(
+            350px,
+            50vw,
+            520px
+        );
+
+    border-radius: 25px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.3),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            145deg,
+            #d8dfd4,
+            #a8b8a3
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size:
+        clamp(
+            80px,
+            12vw,
+            120px
+        );
+
+    color: var(--forest);
+}
+
+.about-content h2 {
+
+    color: var(--forest-dark);
+
+    margin-bottom: 25px;
+}
+
+.about-content p {
+
+    color: var(--text-light);
+
+    margin-bottom: 18px;
+}
+
+.values {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 15px;
+
+    margin-top: 28px;
+}
+
+.value {
+
+    padding: 18px;
+
+    background: var(--cream);
+
+    border-radius: 14px;
+}
+
+.value strong {
+
+    display: block;
+
+    color: var(--forest);
+
+    margin-bottom: 4px;
+}
+
+.value span {
+
+    font-size: 13px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services {
+
+    background: var(--cream);
+}
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 22px;
+}
+
+.service-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: var(--radius);
+
+    border:
+        1px solid
+        rgba(38,53,46,.06);
+
+    transition: .3s ease;
+}
+
+.service-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow);
+}
+
+.service-icon {
+
+    width: 55px;
+    height: 55px;
+
+    background: var(--sage-light);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+
+    color: var(--forest-dark);
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.service-link {
+
+    color: var(--forest);
+
+    font-weight: 700;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   REFLEXOLOGY
+========================================================= */
+
+.featured {
+
+    background: var(--forest-dark);
+
+    color: white;
+}
+
+.featured-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, .8fr);
+
+    gap:
+        clamp(
+            40px,
+            8vw,
+            90px
+        );
+
+    align-items: center;
+}
+
+.featured .eyebrow {
+
+    color: var(--sand);
+}
+
+.featured h2 {
+
+    font-size:
+        clamp(
+            2.5rem,
+            5vw,
+            3.5rem
+        );
+
+    margin-bottom: 20px;
+}
+
+.featured p {
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .75
+        );
+
+    margin-bottom: 18px;
+}
+
+.benefits {
+
+    list-style: none;
+
+    margin:
+        25px
+        0
+        30px;
+}
+
+.benefits li {
+
+    margin-bottom: 8px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .85
+        );
+}
+
+.benefits li::before {
+
+    content: "✓";
+
+    color: var(--sand);
+
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+
+/* PRICING */
+
+.pricing-card {
+
+    background: white;
+
+    color: var(--forest-dark);
+
+    padding:
+        clamp(
+            25px,
+            5vw,
+            40px
+        );
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+}
+
+.pricing-card h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.price-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom:
+        1px solid
+        #e5e5e5;
+}
+
+.price-row:last-child {
+
+    border-bottom: none;
+}
+
+.price-row span {
+
+    color: var(--text-light);
+}
+
+.price {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    color: var(--forest);
+
+    font-size: 26px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   FACEBOOK FEED
+========================================================= */
+
+.facebook-section {
+
+    background: var(--cream);
+
+    overflow: hidden;
+}
+
+.facebook-window {
+
+    width: 100%;
+
+    background: white;
+
+    border-radius: 24px;
+
+    box-shadow: var(--shadow);
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(38, 53, 46, .08);
+}
+
+
+/* HORIZONTAL FEED */
+
+.facebook-scroll {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    padding: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        var(--sage)
+        transparent;
+}
+
+
+/* SCROLLBAR */
+
+.facebook-scroll::-webkit-scrollbar {
+
+    height: 8px;
+}
+
+.facebook-scroll::-webkit-scrollbar-track {
+
+    background: transparent;
+}
+
+.facebook-scroll::-webkit-scrollbar-thumb {
+
+    background: var(--sage);
+
+    border-radius: 20px;
+}
+
+
+/* FACEBOOK PLUGIN */
+
+.facebook-scroll .fb-page {
+
+    flex:
+        0 0
+        min(
+            500px,
+            100%
+        );
+}
+
+
+/* FACEBOOK FOOTER */
+
+.facebook-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding:
+        20px
+        30px;
+
+    border-top:
+        1px solid
+        rgba(38, 53, 46, .08);
+
+    background: #f7f7f3;
+}
+
+.facebook-footer span {
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   WORKSHOPS
+========================================================= */
+
+.workshops {
+
+    background: white;
+}
+
+.workshop-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 20px;
+}
+
+.workshop {
+
+    padding: 28px;
+
+    border:
+        1px solid
+        #e2e4df;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    gap: 18px;
+}
+
+.workshop-number {
+
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: var(--forest);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.workshop h3 {
+
+    color: var(--forest-dark);
+
+    font-size: 22px;
+
+    margin-bottom: 6px;
+}
+
+.workshop p {
+
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   EFT
+========================================================= */
+
+.eft {
+
+    background: #f0f3ed;
+}
+
+.eft-box {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.eft-box .eyebrow {
+
+    justify-content: center;
+}
+
+.eft-box h2 {
+
+    color: var(--forest-dark);
+
+    margin-bottom: 20px;
+}
+
+.eft-box p {
+
+    color: var(--text-light);
+
+    margin:
+        0
+        auto
+        18px;
+}
+
+.eft-price {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin:
+        30px
+        0;
+}
+
+.eft-price div {
+
+    background: white;
+
+    padding:
+        20px
+        30px;
+
+    border-radius: 15px;
+
+    min-width: 180px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.05);
+}
+
+.eft-price strong {
+
+    display: block;
+
+    color: var(--forest);
+
+    font-size: 25px;
+}
+
+.eft-price span {
+
+    color: var(--text-light);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--sand),
+            #c9d2c3
+        );
+}
+
+.cta-box {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.cta-box .eyebrow {
+
+    justify-content: center;
+}
+
+.cta h2 {
+
+    color: var(--forest-dark);
+
+    margin-bottom: 20px;
+}
+
+.cta p {
+
+    color: #58645d;
+
+    margin:
+        0
+        auto
+        30px;
+}
+
+
+/* =========================================================
+   DISCLAIMER
+========================================================= */
+
+.disclaimer {
+
+    background: #f3f1eb;
+
+    padding:
+        45px
+        0;
+}
+
+.disclaimer-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.disclaimer h3 {
+
+    color: var(--forest-dark);
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.disclaimer p {
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: var(--forest-dark);
+
+    color: white;
+
+    padding:
+        60px
+        0
+        25px;
+}
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr;
+
+    gap: 50px;
+
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.footer-description {
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .65
+        );
+
+    font-size: 14px;
+}
+
+.footer-column h4 {
+
+    color: var(--sand);
+
+    margin-bottom: 15px;
+}
+
+.footer-column a {
+
+    display: block;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .7
+        );
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+
+    transition: .2s ease;
+}
+
+.footer-column a:hover {
+
+    color: white;
+}
+
+.copyright {
+
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .12
+        );
+
+    padding-top: 22px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .5
+        );
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .nav-links {
+
+        position: fixed;
+
+        top: 78px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: var(--cream);
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding:
+            15px
+            20px
+            25px;
+
+        box-shadow:
+            0 15px 30px
+            rgba(0,0,0,.08);
+
+        transform:
+            translateY(-150%);
+
+        transition:
+            transform .3s ease;
+    }
+
+    .nav-links.active {
+
+        transform:
+            translateY(0);
+    }
+
+    .nav-links li {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .nav-links a {
+
+        display: block;
+
+        padding: 13px;
+    }
+
+    .menu-button {
+
+        display: block;
+    }
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+        padding:
+            80px
+            0;
+    }
+
+    .hero-content {
+
+        max-width: 750px;
+    }
+
+    .hero-visual {
+
+        max-width: 600px;
+
+        margin: auto;
+
+        width: 100%;
+    }
+
+    .about-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+
+        max-width: 650px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+    .services-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+    .featured-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card {
+
+        max-width: 650px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .container,
+    .nav-container {
+
+        width:
+            calc(100% - 30px);
+    }
+
+    .nav-container {
+
+        height: 70px;
+    }
+
+    .navbar {
+
+        height: 70px;
+    }
+
+    .nav-links {
+
+        top: 70px;
+    }
+
+    .logo-mark {
+
+        width: 38px;
+        height: 38px;
+    }
+
+    .logo-text {
+
+        font-size: 19px;
+    }
+
+    .hero {
+
+        padding-top: 70px;
+    }
+
+    .hero-container {
+
+        padding:
+            70px
+            0
+            60px;
+    }
+
+    .hero-description {
+
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .hero-buttons .button {
+
+        width: 100%;
+    }
+
+    .hero-card {
+
+        min-height: 350px;
+
+        border-radius:
+            120px
+            120px
+            20px
+            20px;
+    }
+
+    .floating-card {
+
+        position: relative;
+
+        left: auto;
+
+        bottom: auto;
+
+        margin:
+            -40px
+            20px
+            0;
+
+        max-width:
+            calc(100% - 40px);
+    }
+
+    section {
+
+        padding:
+            70px
+            0;
+    }
+
+    .values {
+
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+
+        padding: 25px;
+    }
+
+    .workshop-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .workshop {
+
+        padding: 22px;
+    }
+
+    /* FACEBOOK ON PHONE */
+
+    .facebook-scroll {
+
+        justify-content: flex-start;
+
+        padding: 20px;
+
+        overflow-x: auto;
+    }
+
+    .facebook-scroll .fb-page {
+
+        min-width: 500px;
+
+        flex-basis: 500px;
+    }
+
+    .facebook-footer {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+    .facebook-footer .button {
+
+        width: 100%;
+    }
+
+    .eft-price {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .eft-price div {
+
+        width: 100%;
+    }
+
+    .price-row {
+
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    footer {
+
+        padding-top: 45px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .facebook-scroll {
+
+        padding: 15px;
+    }
+
+    .facebook-scroll .fb-page {
+
+        min-width: 350px;
+
+        flex-basis: 350px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .logo-text {
+
+        font-size: 17px;
+    }
+
+    .hero h1 {
+
+        font-size: 42px;
+    }
+
+    .hero-card {
+
+        min-height: 300px;
+    }
+
+    .lotus {
+
+        font-size: 80px;
+    }
+
+    .price-row {
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .price {
+
+        font-size: 23px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+
+        transition: none !important;
+
+        animation: none !important;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     FACEBOOK SDK
+======================================================= -->
+
+<div id="fb-root"></div>
+
+<script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0">
+</script>
+
+
+<!-- =======================================================
+     NAVIGATION
+======================================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a
+            href="#home"
+            class="logo"
+        >
+
+            <div class="logo-mark">
+                ✿
+            </div>
+
+            <span class="logo-text">
+                Touch of Life
+            </span>
+
+        </a>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+
+        <ul
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#services">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="#reflexology">
+                    Reflexology
+                </a>
+            </li>
+
+            <li>
+                <a href="#facebook">
+                    Facebook
+                </a>
+            </li>
+
+            <li>
+                <a href="#workshops">
+                    Workshops
+                </a>
+            </li>
+
+            <li>
+                <a href="#eft">
+                    EFT
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#contact"
+                    class="nav-button"
+                >
+                    Book a Session
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="hero-container">
+
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Holistic Wellness
+            </div>
+
+            <h1>
+                A gentle
+                <span>touch</span>
+                toward a healthier you.
+            </h1>
+
+            <p class="hero-description">
+                Supporting mental, physical, emotional and
+                spiritual wellbeing through holistic wellness
+                practices.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#services"
+                    class="button button-primary"
+                >
+                    Explore Services
+                </a>
+
+                <a
+                    href="#contact"
+                    class="button button-secondary"
+                >
+                    Book a Session
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="hero-card">
+
+                <div class="lotus">
+                    ✿
+                </div>
+
+            </div>
+
+            <div class="floating-card">
+
+                <strong>
+                    Whol-istic Health
+                </strong>
+
+                <span>
+                    Caring for the whole person.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     ABOUT
+======================================================= -->
+
+<section
+    class="about"
+    id="about"
+>
+
+    <div class="container">
+
+        <div class="about-grid">
+
+
+            <div class="about-image">
+                ✿
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="eyebrow">
+                    Our Approach
+                </div>
+
+                <h2>
+                    Wellness begins with the whole you.
+                </h2>
+
+                <p>
+                    Touch of Life takes a holistic approach
+                    to wellness, recognizing the relationship
+                    between the mental, physical, emotional
+                    and spiritual aspects of an individual.
+                </p>
+
+                <p>
+                    Our goal is to provide complementary
+                    wellness practices that encourage
+                    relaxation, balance and greater
+                    self-awareness.
+                </p>
+
+
+                <div class="values">
+
+                    <div class="value">
+
+                        <strong>
+                            Mind
+                        </strong>
+
+                        <span>
+                            Emotional and mental wellbeing.
+                        </span>
+
+                    </div>
+
+
+                    <div class="value">
+
+                        <strong>
+                            Body
+                        </strong>
+
+                        <span>
+                            Physical relaxation and balance.
+                        </span>
+
+                    </div>
+
+
+                    <div class="value">
+
+                        <strong>
+                            Spirit
+                        </strong>
+
+                        <span>
+                            Reflection and personal connection.
+                        </span>
+
+                    </div>
+
+
+                    <div class="value">
+
+                        <strong>
+                            Energy
+                        </strong>
+
+                        <span>
+                            Awareness and energetic balance.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     SERVICES
+======================================================= -->
+
+<section
+    class="services"
+    id="services"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading center">
+
+            <div class="eyebrow">
+                Services
+            </div>
+
+            <h2>
+                Explore holistic wellness.
+            </h2>
+
+            <p>
+                Discover the services available at
+                Touch of Life.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🦶
+                </div>
+
+                <h3>
+                    Reflexology
+                </h3>
+
+                <p>
+                    A complementary practice focused on
+                    specific reflex areas of the feet
+                    and hands.
+                </p>
+
+                <a
+                    href="#reflexology"
+                    class="service-link"
+                >
+                    View service →
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Reiki
+                </h3>
+
+                <p>
+                    A gentle energy-based practice centered
+                    around relaxation and balance.
+                </p>
+
+                <a
+                    href="#contact"
+                    class="service-link"
+                >
+                    Learn more →
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🧘
+                </div>
+
+                <h3>
+                    Kinesiology
+                </h3>
+
+                <p>
+                    Holistic kinesiology practices focused
+                    on body awareness and balance.
+                </p>
+
+                <a
+                    href="#contact"
+                    class="service-link"
+                >
+                    Learn more →
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🌿
+                </div>
+
+                <h3>
+                    Aromatherapy
+                </h3>
+
+                <p>
+                    Aromatic oils and techniques incorporated
+                    into a relaxing wellness experience.
+                </p>
+
+                <a
+                    href="#contact"
+                    class="service-link"
+                >
+                    Learn more →
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    💫
+                </div>
+
+                <h3>
+                    EFT
+                </h3>
+
+                <p>
+                    Emotional Freedom Technique, also known
+                    as meridian tapping.
+                </p>
+
+                <a
+                    href="#eft"
+                    class="service-link"
+                >
+                    View service →
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Workshops
+                </h3>
+
+                <p>
+                    Classes and educational opportunities
+                    focused on holistic wellness practices.
+                </p>
+
+                <a
+                    href="#workshops"
+                    class="service-link"
+                >
+                    View workshops →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     REFLEXOLOGY
+======================================================= -->
+
+<section
+    class="featured"
+    id="reflexology"
+>
+
+    <div class="container">
+
+        <div class="featured-grid">
+
+
+            <div>
+
+                <div class="eyebrow">
+                    Reflexology
+                </div>
+
+                <h2>
+                    Relax. Restore. Rebalance.
+                </h2>
+
+                <p>
+                    Reflexology is a complementary wellness
+                    practice involving manual techniques
+                    applied to specific reflex areas,
+                    primarily on the feet and hands.
+                </p>
+
+                <ul class="benefits">
+
+                    <li>
+                        Supports relaxation
+                    </li>
+
+                    <li>
+                        Encourages body awareness
+                    </li>
+
+                    <li>
+                        Promotes a sense of wellbeing
+                    </li>
+
+                    <li>
+                        Provides dedicated time for rest
+                    </li>
+
+                </ul>
+
+                <a
+                    href="#contact"
+                    class="button button-secondary"
+                >
+                    Book Reflexology
+                </a>
+
+            </div>
+
+
+            <div class="pricing-card">
+
+                <h3>
+                    Pricing
+                </h3>
+
+                <div class="price-row">
+
+                    <span>
+                        50-minute session
+                    </span>
+
+                    <strong class="price">
+                        $70
+                    </strong>
+
+                </div>
+
+
+                <div class="price-row">
+
+                    <span>
+                        25-minute session
+                    </span>
+
+                    <strong class="price">
+                        $35
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     FACEBOOK
+======================================================= -->
+
+<section
+    class="facebook-section"
+    id="facebook"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading center">
+
+            <div class="eyebrow">
+                Follow Along
+            </div>
+
+            <h2>
+                Recent from Touch of Life
+            </h2>
+
+            <p>
+                Stay connected with the latest news,
+                wellness tips, events and updates.
+            </p>
+
+        </div>
+
+
+        <div class="facebook-window">
+
+
+            <div class="facebook-scroll">
+
+
+                <!--
+                    FACEBOOK PAGE PLUGIN
+
+                    This loads the public Touch of Life
+                    Facebook Page timeline.
+                -->
+
+                <div
+                    class="fb-page"
+                    data-href="https://www.facebook.com/touchoflife716/"
+                    data-tabs="timeline"
+                    data-width="500"
+                    data-height="650"
+                    data-small-header="false"
+                    data-adapt-container-width="true"
+                    data-hide-cover="false"
+                    data-show-facepile="false"
+                >
+
+                    <blockquote
+                        cite="https://www.facebook.com/touchoflife716/"
+                        class="fb-xfbml-parse-ignore"
+                    >
+
+                        <a
+                            href="https://www.facebook.com/touchoflife716/"
+                        >
+                            Touch of Life
+                        </a>
+
+                    </blockquote>
+
+                </div>
+
+            </div>
+
+
+            <div class="facebook-footer">
+
+                <span>
+                    Follow Touch of Life on Facebook
+                </span>
+
+                <a
+                    href="https://www.facebook.com/touchoflife716/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-primary"
+                >
+                    Visit Facebook
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     WORKSHOPS
+======================================================= -->
+
+<section
+    class="workshops"
+    id="workshops"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                Workshops & Classes
+            </div>
+
+            <h2>
+                Learn something new.
+            </h2>
+
+            <p>
+                Explore educational opportunities covering
+                Touch of Life's holistic wellness practices.
+            </p>
+
+        </div>
+
+
+        <div class="workshop-grid">
+
+
+            <div class="workshop">
+
+                <div class="workshop-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Reflexology
+                    </h3>
+
+                    <p>
+                        Introduction to reflexology and
+                        reflex areas of the body.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="workshop">
+
+                <div class="workshop-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        Kinesiology
+                    </h3>
+
+                    <p>
+                        Explore holistic kinesiology and
+                        body awareness.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="workshop">
+
+                <div class="workshop-number">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Reiki
+                    </h3>
+
+                    <p>
+                        Learn about the principles and
+                        practice of Reiki.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="workshop">
+
+                <div class="workshop-number">
+                    04
+                </div>
+
+                <div>
+
+                    <h3>
+                        EFT
+                    </h3>
+
+                    <p>
+                        Introduction to Emotional Freedom
+                        Technique and tapping.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="workshop">
+
+                <div class="workshop-number">
+                    05
+                </div>
+
+                <div>
+
+                    <h3>
+                        Aromatherapy
+                    </h3>
+
+                    <p>
+                        Explore aromatic techniques used
+                        in holistic wellness.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     EFT
+======================================================= -->
+
+<section
+    class="eft"
+    id="eft"
+>
+
+    <div class="container">
+
+        <div class="eft-box">
+
+
+            <div class="eyebrow">
+                Emotional Freedom Technique
+            </div>
+
+            <h2>
+                Release. Rebalance. Reconnect.
+            </h2>
+
+            <p>
+                Emotional Freedom Technique, commonly
+                referred to as EFT or tapping, uses gentle
+                tapping techniques while focusing attention
+                on an issue or concern.
+            </p>
+
+
+            <div class="eft-price">
+
+
+                <div>
+
+                    <strong>
+                        $100
+                    </strong>
+
+                    <span>
+                        First session
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        $70/hr
+                    </strong>
+
+                    <span>
+                        Additional sessions
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <a
+                href="#contact"
+                class="button button-primary"
+            >
+                Book an EFT Session
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     CONTACT / CTA
+======================================================= -->
+
+<section
+    class="cta"
+    id="contact"
+>
+
+    <div class="container">
+
+        <div class="cta-box">
+
+
+            <div class="eyebrow">
+                Get Started
+            </div>
+
+            <h2>
+                Make space for your wellbeing.
+            </h2>
+
+            <p>
+                Interested in a session or one of our
+                workshops? Get in touch to learn more.
+            </p>
+
+
+            <!--
+                REPLACE "#" WITH THE REAL
+                BOOKING OR CONTACT URL.
+            -->
+
+            <a
+                href="#"
+                class="button button-primary"
+                id="bookingButton"
+            >
+                Book a Session
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     DISCLAIMER
+======================================================= -->
+
+<section class="disclaimer">
+
+    <div class="container">
+
+        <div class="disclaimer-box">
+
+
+            <h3>
+                Important Disclaimer
+            </h3>
+
+            <p>
+                Touch of Life provides complementary holistic
+                wellness practices. These services are not
+                intended to diagnose, treat, or prescribe
+                medication for medical conditions and are
+                not a substitute for professional medical care.
+                Please consult an appropriate healthcare
+                professional regarding medical concerns.
+            </p>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <div class="footer-logo">
+                    Touch of Life
+                </div>
+
+                <p class="footer-description">
+                    Supporting mental, physical, emotional
+                    and spiritual wellbeing through
+                    holistic wellness practices.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#facebook">
+                    Facebook
+                </a>
+
+                <a href="#workshops">
+                    Workshops
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Services
+                </h4>
+
+                <a href="#reflexology">
+                    Reflexology
+                </a>
+
+                <a href="#eft">
+                    EFT
+                </a>
+
+                <a href="#services">
+                    Reiki
+                </a>
+
+                <a href="#services">
+                    Kinesiology
+                </a>
+
+                <a href="#services">
+                    Aromatherapy
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Touch of Life. All rights reserved.
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+const menuButton =
+    document.getElementById("menuButton");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuButton.addEventListener(
+    "click",
+    function () {
+
+        const isOpen =
+            navLinks.classList.toggle("active");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        menuButton.innerHTML =
+            isOpen
+                ? "✕"
+                : "☰";
+
+    }
+);
+
+
+/* =========================================================
+   CLOSE MOBILE MENU WHEN LINK IS CLICKED
+========================================================= */
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                navLinks.classList.remove("active");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuButton.innerHTML = "☰";
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   SMOOTH SCROLLING
+========================================================= */
+
+document
+    .querySelectorAll('a[href^="#"]')
+    .forEach(function(anchor) {
+
+        anchor.addEventListener(
+            "click",
+            function(event) {
+
+                const targetID =
+                    this.getAttribute("href");
+
+                if (
+                    targetID === "#" ||
+                    targetID === ""
+                ) {
+
+                    return;
+
+                }
+
+                const target =
+                    document.querySelector(
+                        targetID
+                    );
+
+                if (target) {
+
+                    event.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                }
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   BOOKING BUTTON
+========================================================= */
+
+const bookingButton =
+    document.getElementById("bookingButton");
+
+
+bookingButton.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            this.getAttribute("href") === "#"
+        ) {
+
+            event.preventDefault();
+
+            alert(
+                "Please add the Touch of Life booking or contact link to this button."
+            );
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   RESET MOBILE MENU WHEN RESIZING
+========================================================= */
+
+window.addEventListener(
+    "resize",
+    function() {
+
+        if (window.innerWidth > 950) {
+
+            navLinks.classList.remove("active");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuButton.innerHTML = "☰";
+
+        }
+
+    }
+);
+
+
+</script>
+
+
+</body>
+
+</html>
